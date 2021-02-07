@@ -122,4 +122,4 @@ ul.pagination>li.footable-page.visible{display:inline}
 td.footable-editing{width:90px;max-width:90px}
 .img-thumbnail-sm{background:#fff;border:1px solid #bbb;border-radius:4px;padding:2px}
 
-.footable-filtering-search {float:right;}
+.footable-filtering .form-inline {float:right;}

@@ -52,12 +52,12 @@ span.footable-toggle {display:inline-block;width:20px;cursor:pointer;}
 .footable .pagination > .active > span:hover,
 .footable .pagination > .active > a:focus,
 .footable .pagination > .active > span:focus {
-	background-color: var(--main-color);
-	border-color: var(--main-color);
+	/*background-color: var(--main-color);
+	border-color: var(--main-color);*/
 }
 .footable .btn-primary {
-	background-color: var(--main-color);
-	border-color: var(--main-color);
+	/*background-color: var(--main-color);
+	border-color: var(--main-color);*/
 }
 .icon-imagetv {color: #dfdfdf;}
 .dark .icon-imagetv {color: var(--medium-grey);}

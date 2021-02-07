@@ -461,7 +461,8 @@ else {
 $cssOutput = '
 <link type="text/css" rel="stylesheet" href="media/style/' . $modx->config['manager_theme'] . '/style.css">
 <link type="text/css" rel="stylesheet" href="../assets/modules/listdoc/css/footable.evo.min.css">
-<link type="text/css" rel="stylesheet" href="../assets/modules/listdoc/css/list.css">';
+ <link type="text/css" rel="stylesheet" href="../assets/modules/listdoc/css/list.css">
+ <link type="text/css" rel="stylesheet" href="../assets/modules/listdoc/css/jquery-confirm.min.css">';
 }
 
 //output
@@ -524,7 +525,7 @@ $rowTpl = '@CODE: <tr id="[+id+]">
 
 //Image column
 if ($ImageTv != '') {
-if ($ShowImageIn == column) {
+ if ($ShowImageIn == 'column') {
 $rowTpl .= '<td aria-expanded="false" class="footable-toggle" ><img class="footable-toggle img-thumbnail-sm" src="../[[phpthumb? &input=`[+'.$ImageTv.'+]` &options=`w=70,h=70,q=60,zc=C`]]" alt="[+title+]"> </td> ';
 $ImageTVHead = '<th width="100" data-type="html" data-breakpoints="xs" data-filterable="false" data-sortable="false" style="text-align:center"><i class="icon-imagetv fa fa-2x fa-camera" aria-hidden="true"></i></th> ';
 }
@@ -646,7 +647,7 @@ $rowTpl .= '<span class="footable-toggle" style="margin-left:-4px;" title="' . $
 <td class="resource-details">';
 //image tv
 if ($ImageTv != '') {
-if ($ShowImageIn == overview) {
+ if ($ShowImageIn == 'overview') {
 $rowTpl .= '<div class="pull-left" style="margin-right:5px"><img class="img-responsive img-thumbnail" src="../[[phpthumb? &input=`[+'.$ImageTv.'+]` &options=`w=90,h=90,q=60,zc=C`]]" alt="[+title+]"> </div> ';
 }
 }
@@ -750,7 +751,7 @@ $output .= '
 <div style="display:none;" id="DashboardList" class="table-responsive">
 				<table data-state="true" data-state-key="ListDocMod_state" data-paging-size="10" data-show-toggle="false" data-toggle-column="last" data-toggle-selector=".footable-toggle" data-filter-ignore-case="true" data-filtering="true" data-state-filtering="true" data-filter-exact-match="false" data-filter-dropdown-title="'.$_lang["search_criteria"].'" data-filter-placeholder="'.$_lang["element_filter_msg"].'" data-filter-position="right" class="table data" id="TableList">
                 <thead>
-<div style="position:absolute;top:70px;right:25px; z-index:10;" class="hidden-xs-down">
+ <div style="position:absolute;top:75px;left:25px;z-index:10;" class="hidden-xs-down">
 <button type="button" class="btn btn-sm btn-success btn-refresh" onClick="window.location.reload();" title="' . $_LDlang["update"] . '"><i class="fa fa-refresh" aria-hidden="true"></i></button>
 <button type="button" class="btn btn-sm btn-secondary btn-size" id="page-size-5" data-page-size="5">5</button>
 <button type="button" class="btn btn-sm btn-secondary btn-size" id="page-size-10" data-page-size="10">10</button>
