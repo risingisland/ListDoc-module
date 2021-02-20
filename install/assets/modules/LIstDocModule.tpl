@@ -782,7 +782,7 @@ if ($showEmptyTrashButton == 'yes') {
 if($modx->hasPermission('empty_trash')) {
 $output .= '
 <div id="purgeTrash" style="margin-top:10px;margin-right:30px;" class="pull-right">
-<a id="emptyTrash" class="btn btn-md btn-emptytrash btn-secondary disabled" data-title="' . $_lang["empty_recycle_bin"] . '?" href="index.php?a=64" title="' . $_lang["empty_recycle_bin"] . '">'.$_style['empty_recycle_bin_empty'].'</a>
+<a id="emptyTrash" class="btn btn-md btn-emptytrash btn-secondary disabled" data-title="' . $_lang["empty_recycle_bin"] . '?" href="index.php?a=64" title="' . $_lang["empty_recycle_bin"] . '">'.$_style['empty_recycle_bin_empty'].'<i class="fa fa-trash"></i></a>
 ';
 }
 }
